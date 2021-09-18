@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contato - Primeira Página</title>
 </head>
 
 <body>
 
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
+    <nav>
+        <div class="content-nav">
+            <img src="/assets/img/vovojuju.png" class="vovo">
+            <ul>
+                <li><a href="index.html"><spam class="click-icon">•</spam>Home</a></li>
+                <li><a href="contato.html"><spam class="click-icon">•</spam>Contato</a></li>
+            </ul>
 
-    <h1 style="font-family: 'Courier New', Courier, monospace">Entre em Contato!</h1>
-    <h3 style="font-family: 'Courier New', Courier, monospace">Deixe o seu contato, a sua mensagem, ou liga nóis nas redes sociais!</h3>
+        </div>
+    </nav>
 
-    <img src="https://pbs.twimg.com/profile_images/651915043131535360/w-dXx3AV_400x400.png"
-    style="border-radius: 50%; width: 20%; height: 20%; ">
-
-    <div id="conteudo">
-        <form>
+    <div class="titulo">
+        <h1>Entre em Contato!</h1>
+        <h3>Deixe o seu contato, a sua mensagem, ou liga nóis nas redes sociais!</h3>
+    </div>
+    
+    <div class="container">
+        <form class="container">
             <fieldset>
                 <legend>Mensagem:</legend>
                 <label for="name" style="color: rgb(0, 0, 0);">Nome:</label>
@@ -46,6 +48,9 @@
                 <button>Enviar!</button>
             </fieldset>
         </form>
+
+    </div>
+    <div class="container">
         
 
         <h3>Endereço:</h3>
@@ -56,5 +61,6 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14625.95447666929!2d-46.69090663022459!3d-23.5868031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1631811932962!5m2!1spt-BR!2sbr" 
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
+    
 </body>
 </html>
