@@ -8,8 +8,6 @@ body {
    
 }
 
-
-
 .content-nav {
     height: auto;
     background-color: #DAB0A2;
@@ -81,6 +79,10 @@ a {
     text-decoration: none;
 }
 
+.social-links {
+
+}
+
 .center {
     justify-content: center;
 }
@@ -98,10 +100,18 @@ a {
 }
 
 .video {
-    display: block;
-    position: relative;
-    margin: auto;
+    background-color: #f0f1d8;
+    height: auto;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
 
+.video iframe {
+    display: flex;
+    width: 100%;
 }
 
 /* Contato */
@@ -144,8 +154,12 @@ a {
     height: 40px;
 }
 
-
-
-
-
-
+.developer-sign {
+    display: flex;
+    height: 50px;
+    border-top: 1px solid #0a1f24;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f1d8;
+    color: color #0a1f24;
+}
