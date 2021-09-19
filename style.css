@@ -8,6 +8,8 @@ body {
    
 }
 
+
+
 .content-nav {
     height: auto;
     background-color: #DAB0A2;
@@ -95,8 +97,55 @@ a {
     background-color: #B6DADE;
 }
 
-.video iframe{
+.video {
+    display: block;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Contato */
+.msg-form {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: wrap;
+    align-content: flex-start;
+    width: 99%;
     
 }
+
+.msg-form form{
+    display: block;
+    background-color: #82c0cf;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.msg-form form input {
+    width: 80%;
+}
+
+.msg-form form textarea {
+    width: 90%;
+    height: 190px;
+}
+
+.msg-form fieldset {
+    padding: 30px;
+    width: 80%;
+}
+
+.msg-form button {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 40px;
+}
+
+
+
+
+
 
