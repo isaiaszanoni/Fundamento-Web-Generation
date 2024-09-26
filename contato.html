@@ -31,22 +31,26 @@
             <form>
                 <fieldset>
                     <legend>Mensagem:</legend>
-                    <label for="name" style="color: rgb(0, 0, 0);">Nome:</label>
-                    <input type="text" id="nome">
-                    <br>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="nome" onkeyup='validaNome()'>
+                    <div id="txtNome"></div>
                     <br>
                     <label for="email">E-mail:</label>
-                    <input type="text" name="email">
+                    <input type="text" id="email" onkeyup='validaEmail()'>
+                    <div id="txtEmail"></div>
                     <br>
                     <br>
                     <br>
-                    <label for="Sua mensagem">Deixe a sua mensagem: </label>
-                    <br>
-                    <br>
-                    <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
-                    <br>
-                    <br>
-                    <button>Enviar!</button>
+                    
+                    <label for="Sua mensagem">
+                        Deixe a sua mensagem: 
+                        
+                    </label>
+                    
+                    <textarea name="assunto" id="assunto" cols="40" rows="10" onkeyup="validaAssunto()"></textarea>
+                    <div id="txtAssunto"></div>
+
+                    <button class="center" onclick="enviar()">Enviar!</button>
                 </fieldset>
             </form>
         </div>
@@ -60,10 +64,10 @@
         <p>
             Av. Brig. Faria Lima, 3477 - 04538-133<br>São Paulo, SP
         </p>
-        <div class="video">
-            <iframe
+        <div class="mapa">
+            <iframe id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14625.95447666929!2d-46.69090663022459!3d-23.5868031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1631811932962!5m2!1spt-BR!2sbr" 
-             allowfullscreen="" loading="lazy"></iframe>
+             allowfullscreen="" loading="lazy" width="300px" height="230px"></iframe>
         </div>
     </div>
     <footer>
@@ -74,5 +78,7 @@
             </p>    
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

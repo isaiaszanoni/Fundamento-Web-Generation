@@ -5,7 +5,6 @@ body {
     color: #0a1f24;
     background-color: #f0f1d8;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
 }
 
 .content-nav {
@@ -58,8 +57,6 @@ body {
     width: 120px;
     height: 120px;
 }
-
-
 
 h1, h3 {
     font-family: 'Courier New', Courier, monospace"
@@ -122,12 +119,11 @@ a {
     flex-flow: wrap;
     align-content: flex-start;
     width: 99%;
-    
 }
 
 .msg-form form{
     display: block;
-    background-color: #82c0cf;
+    background-color: #90C1C7;
     width: 80%;
     padding: 20px;
     margin-top: 20px;
@@ -145,6 +141,10 @@ a {
 .msg-form fieldset {
     padding: 30px;
     width: 80%;
+}
+
+.msg-form legend {
+    padding: 8px;
 }
 
 .msg-form button {
